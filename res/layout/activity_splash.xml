@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/jump_maze_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_weight="0.02"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/jump_maze"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:textSize="35sp" />
+
+    <ImageView
+        android:id="@+id/splash_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:src="@drawable/splash_icon" />
+
+    <Button
+        android:id="@+id/start_jump_maze_game"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_weight="0.01"
+        android:text="@string/start_maze"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.09"
+        android:gravity="center_vertical|center_horizontal" >
+
+        <CheckBox
+            android:id="@+id/hint_splash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/background_music_splash"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:text="@string/background_music"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/sound_FX_splash"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sounds_effects"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/tutorial_splash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="@string/tutorial" />
+
+            <Button
+                android:id="@+id/about_splash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="@string/about" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

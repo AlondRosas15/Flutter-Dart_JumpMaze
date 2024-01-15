@@ -5,23 +5,80 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="4"
+        android:minSdkVersion="8"
         android:targetSdkVersion="17" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/g_dark_trans"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme" 
+        android:name=".Maze">
         <activity
-            android:name="edu.gettysburg.cs.jumpmaze.MazeActivity"
-            android:label="@string/app_name" >
+            android:name="edu.gettysburg.cs.jumpmaze.ActivitySplash"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="edu.gettysburg.cs.jumpmaze.MazeActivity"
+            android:label="@string/app_name" >
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gettysburg.cs.jumpmaze.ActivitySplash"/> 
+        </activity>
+        <activity
+            android:name="edu.gettysburg.cs.jumpmaze.SoundActivity"
+            android:label="@string/sound_title" >
+        </activity>
+        <activity
+            android:name="edu.gettysburg.cs.jumpmaze.TutorialActivity1"
+            android:label="@string/tutorial" >
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gettysburg.cs.jumpmaze.ActivitySplash"/> 
+        </activity>
+        <activity
+            android:name="edu.gettysburg.cs.jumpmaze.TutorialActivity2"
+            android:label="@string/tutorial" >
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gettysburg.cs.jumpmaze.ActivitySplash"/> 
+        </activity>
+        <activity
+            android:name="edu.gettysburg.cs.jumpmaze.TutorialActivity3"
+            android:label="@string/tutorial" >
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gettysburg.cs.jumpmaze.ActivitySplash"/> 
+        </activity>
+        <activity
+            android:name="edu.gettysburg.cs.jumpmaze.TutorialActivity4"
+            android:label="@string/tutorial" >
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gettysburg.cs.jumpmaze.ActivitySplash"/> 
+        </activity>
+        <activity
+            android:name="edu.gettysburg.cs.jumpmaze.TutorialActivityNote"
+            android:label="@string/tutorial" >
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gettysburg.cs.jumpmaze.ActivitySplash"/> 
+        </activity>
+        <activity
+            android:name="edu.gettysburg.cs.jumpmaze.AboutActivity"
+            android:label="@string/tutorial" >
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gettysburg.cs.jumpmaze.ActivitySplash"/> 
+        </activity>
+        <service android:name="SoundService"></service>
+        
+        
     </application>
 
 </manifest>
