@@ -6,19 +6,12 @@ import java.util.Queue;
 
 public class BreadthFirstSearch {
 
-	//Performs a Breadth-First-Search on the maze to find the shortest path
-	//Given:Maze                a maze with jump values
-	//Return:Node                Returns the goalNode
-	public static Node bfs(Node[][] maze){
-		Node goalNode = null;
+	public void bfs(Node[][] maze){		
 		for(int i = 0; i < 5; i++){
 			for(int j = 0; j < 5; j++){
 				Node node = maze[i][j];
-				node.color = 1;
+				node.color = 0;
 				node.parent = null;
-				if(node.isGoal){
-					goalNode = node;
-				}
 			}
 		}
 		Node startNode = maze[0][0];
@@ -38,26 +31,22 @@ public class BreadthFirstSearch {
 				}
 			}
 			u.color = 3;
-		}
-		return goalNode;
+		}	
 	}
-	//Returns the length of the shortest path
-	//Given:Maze                a maze with jump values
-	//Return:int                Returns the length of the shortest path from starting position to the goal
-	public static int getShortestPath(Node[][] maze){
-		//LegalMoves.allLegalMoves(maze);
-		Node goalNode = bfs(maze); //calls bfs to set up the path
-		//if the goal node was never reached
+	public int getShortestPath(Node[][] maze){
+		Node goalNode = LegalMoves.allLegalMoves(maze);
+		bfs(maze); //calls bfs to set up the path
 		if(goalNode.color == 1){
 			return -1;
-		}else{ //there is a path to the goal node
+		}else{
 			ArrayList<Node> stack = new ArrayList<Node>();
 			Node node = goalNode;
 			while(node != null){
 				stack.add(node);
 				node = node.parent;
-			}                        
+			}			
 			return stack.size() - 1;
-		}                
+		}		
 	}
 }
+

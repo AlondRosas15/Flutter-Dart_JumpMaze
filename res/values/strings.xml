@@ -3,24 +3,6 @@
 
     <string name="app_name">Jump Maze</string>
     <string name="action_settings">Settings</string>
-    <string name="jump_maze">Jump Maze</string>
-    <string name="background_music">Background Music</string>
-    <string name="sounds_effects">Sounds Effects</string>
-    <string name="sound_title">Sound Options</string>
-    <string name="hint">Hints</string>
-    <string name="about">About</string>
-    <string name="tutorial">Tutorial</string>
-    <string name="start_maze">Start Maze!</string>
-    <string name="apply">Apply</string>
-    <string name="tutorial1">The objective of the game is to get from the start to the goal (G). From the current numbered cell, you can move that exact number of cells horizontally or vertically in a straight line. </string>
-    <string name="tutorial2"> From the starting position, we can move vertically down 2 spots to the 4, or right 2 spots to the 3.</string>
-    <string name="faq">FAQ \n\n Is it possible to move diagonally? \n No, moves can only be made horizontally or vertically.  </string>
-    <string name="note2">There is always a way to reach the goal position, no matter which position you reach. Restarts are not necessary. \n\n You cannot move diagonally, only vertical or horizontal moves are allowed. \n\n After solving each maze, you will be able to compare how many moves you made to the minimum number of moves possible, and can replay the game if you wish.</string>
-    <string name="note">Note</string>
-    <string name="activity_splash_app">ActivitySplash</string>
-    <string name="play">&quot;Let's play!&quot;</string>
-    <string name="aboutinfo">About \n\nThis application was created by the Local Chapter of the ACM at\nGettysburg College.\n\nProject Manager: \nLorin Rumberger \n\nGUI:\nTim Cook\nLee Sieger\n\nActivities and Navigation:\nLuke Burtch\nAnh Nguyen\n\nMaze Logic:\nErin Brady \n\nSounds:\nGloria Mendoza \n\nTutorial:\nPhoebe Eng\n\n\nPorted From IPhone to Android\n2010 IPhone Team\n\nProject Manager:\nBen Winston\n\nMaze Generation:\nDr. Todd Neller\n\nMusic:\nAlexander Posmontier\nSteven Hnath\n\nGraphics:\nAmanda Gower\nStefanie Roberts\n\nMaze Logic:\nForrest Jacobs\nSteven Moxley\n\nSpecial Thanks to Todd Neller for supporting the project from start to finish!\n\n</string>
-    <string name="tutorial3">Suppose we move down to the 4.  There is only one legal (forced) move: right 4 cells to the 1.</string>
-    <string name="tutorial4"> From that 1, we can then move up 1 to the 2, left 1 to the 3, or down 1 to the 4.</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
